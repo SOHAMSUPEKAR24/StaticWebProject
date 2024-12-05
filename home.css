@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #e9f1f7, #ffffff);
+    overflow-x: hidden;
+}
+
+/* Video Section */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+#title-video {
+    width: 100%;
+    height: 90%;
+    object-fit: scale-down;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+.navigationbar {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navigationbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navigationbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.navigationbar ul li a:hover {
+    color: #ffa500;
+}
+
+/* Hero Section */
+.hero-content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.highlight {
+    color: #ffa500;
+}
+
+.since-container {
+    margin: 20px 0;
+}
+
+.highlight-text {
+    color: #1e90ff;
+    font-weight: bold;
+}
+
+.categories ul {
+    margin-top: 10px;
+}
+
+/* Trusted Text */
+.trusted-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #2e8b57;
+}
+
+/* Technical Backbone Section */
+.technical-backbone {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.technical-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 200px;
+}
+
+.tech-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 80px 40px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.tech-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Why Us Section */
+.why-us {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.why-us ul {
+    margin: 20px auto;
+    list-style: none;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.why-us li {
+    background: hsla(0, 19%, 54%, 0.502);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 10px;
+}
