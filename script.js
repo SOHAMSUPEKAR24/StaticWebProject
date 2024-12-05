@@ -1,22 +1,13 @@
-// Replay Video and Navigate to Home Page
+// Get the video element
 const video = document.getElementById('title-video');
 
-// Check if the user is visiting for the first time
-if (!localStorage.getItem('hasVisited')) {
-    // If first time, play the video
+// Ensure the video always starts playing when the page loads
+window.addEventListener('load', () => {
     video.currentTime = 0; // Start from the beginning
-    video.play();
+    video.play(); // Play the video
+});
 
-    // Set a flag in localStorage
-    localStorage.setItem('hasVisited', 'true');
-} else {
-    // Skip the video and show the home section
-    video.currentTime = video.duration; // Move to the end of the video
-    video.pause();
-    document.getElementById('video-section').style.display = 'none'; // Optionally hide video
-}
-
-// Pause the video after it ends
+// Pause the video when it ends
 video.addEventListener('ended', () => {
     video.pause();
 });
@@ -25,17 +16,15 @@ video.addEventListener('ended', () => {
 video.addEventListener('click', () => {
     video.currentTime = 0; // Start from the beginning
     video.play();
-
-    // Redirect to Home Section
-    window.location.href = "#home";
+    window.location.href = "#home"; // Redirect to the home section
 });
 
-// Smooth Scrolling for Links
+// Smooth scrolling for internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
         });
     });
 });
