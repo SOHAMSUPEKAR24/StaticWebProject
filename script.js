@@ -7,11 +7,6 @@ window.addEventListener('load', () => {
     video.play(); // Play the video
 });
 
-// Pause the video when it ends
-video.addEventListener('ended', () => {
-    video.pause();
-});
-
 // Replay the video when clicked and redirect to the home section
 video.addEventListener('click', () => {
     video.currentTime = 0; // Start from the beginning
