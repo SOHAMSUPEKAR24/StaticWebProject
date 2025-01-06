@@ -384,3 +384,136 @@ html {
     font-size: 1rem;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.6);
 }
+
+/* General Reset remains the same */
+
+/* Optimize for Mobile Screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%; /* Slightly smaller font size */
+    }
+
+    /* Navigation Bar */
+    .navigationbar {
+        padding: 5px 0; /* Further reduce padding for tighter spacing */
+        margin-top: 5px;
+    }
+
+    .navigationbar ul {
+        /* flex-direction: column; Stack navigation links vertically */
+        gap: 5px; /* Reduce spacing */
+    }
+
+    .navigationbar ul li a {
+        padding: 5px 5px; /* Adjust padding for smaller screens */
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 30px 10px; /* Reduce padding */
+        margin: 15px auto; /* Adjust margin */
+    }
+
+    .hero-title {
+        font-size: 2rem; /* Reduce title size */
+    }
+
+    .video-container {
+        height: 15vh; /* Reduce height for smaller screens */
+        margin-bottom: 0;
+    }
+
+    #title-video {
+        width: 100%; /* Ensure the video fills the container width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 100%; /* Prevent the video from exceeding the container height */
+        border: 3px solid #444; /* Adjust border size */
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Adjust shadow */
+    }
+
+    #title-video:hover {
+        transform: scale(1.03); /* Subtle hover effect */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Adjust hover shadow */
+    }
+
+    .since-container {
+        font-size: 1rem; /* Smaller text */
+    }
+
+    /* Categories Section */
+    .categories h2 {
+        font-size: 1.5rem; /* Reduce heading size */
+    }
+
+    .categories p {
+        font-size: 1rem; /* Reduce paragraph size */
+    }
+
+    .categories ul {
+        padding-left: 20px; /* Adjust indentation */
+    }
+
+    .categories li {
+        font-size: 1rem; /* Smaller list items */
+    }
+
+    /* Technical Backbone Cards */
+    .technical-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust card width */
+        gap: 15px; /* Smaller gap */
+    }
+
+    .tech-card {
+        max-width: 90%; /* Reduce card width */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .tech-card img {
+        margin-bottom: 5px; /* Reduce spacing */
+    }
+
+    /* Why Us Section */
+    .why-us {
+        padding: 30px 10px; /* Reduce padding */
+        margin: 15px auto; /* Adjust margin */
+    }
+
+    .why-us h2 {
+        font-size: 1.8rem; /* Reduce heading size */
+    }
+
+    .why-us ul li {
+        font-size: 1rem; /* Smaller list items */
+    }
+
+    /* Floating Icons */
+    .floating-icons {
+        bottom: 10px; /* Adjust position */
+        right: 10px;
+    }
+
+    .floating-icons a img {
+        width: 30px; /* Smaller icons */
+        height: 30px;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        padding: 30px 10px; /* Reduce padding */
+        margin: 20px auto; /* Adjust margin */
+    }
+
+    .contact-section h2 {
+        font-size: 1.8rem; /* Reduce heading size */
+    }
+
+    .contact-section p {
+        font-size: 1rem; /* Smaller text */
+    }
+
+    /* Footer */
+    .footer {
+        padding: 15px; /* Reduce padding */
+        font-size: 0.9rem; /* Smaller text */
+    }
+}
