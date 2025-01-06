@@ -7,6 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    /* Base font size for easier scaling */
     line-height: 1.6;
     color: #e0e0e0;
     background: linear-gradient(135deg, #232526, #414345, #1c1c1c, #2c3e50, #34495e);
@@ -14,6 +16,7 @@ body {
     animation: backgroundAnimation 10s ease infinite;
     overflow-x: hidden;
 }
+
 
 /* Background Animation Keyframes */
 @keyframes backgroundAnimation {
@@ -102,6 +105,8 @@ html {
 }
 
 .navigationbar ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
     display: flex;
     list-style: none;
     gap: 25px;
@@ -200,7 +205,6 @@ html {
     content: "";
     /* Creates an empty pseudo-element */
     display: block;
-    width: 1000px;
     /* Width of the underline */
     height: 4px;
     /* Thickness of the underline */
@@ -237,7 +241,7 @@ html {
     list-style-type: none;
     /* Remove default bullet points */
     margin: 20px auto;
-    padding-left: 0;
+    padding-left: 10;
     /* Align content properly */
     color: #f0f0f0;
     /* Light color for better visibility */
@@ -322,7 +326,7 @@ html {
 /* Technical Backbone Cards */
 .technical-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /* Adjusted min-width for larger cards */
     gap: 20px;
     padding: 20px;
@@ -484,31 +488,34 @@ html {
     }
 
     .navigationbar ul {
-        /* flex-direction: column; Stack navigation links vertically */
-        gap: 5px;
+        flex-direction: column;
+        gap: 10px;
         /* Reduce spacing */
     }
 
     .navigationbar ul li a {
-        padding: 5px 5px;
+        padding: 8px 10px;
+        font-size: 14px;
         /* Adjust padding for smaller screens */
     }
 
     /* Hero Section */
     .hero {
-        padding: 30px 10px;
+        padding: 20px 5px;
         /* Reduce padding */
-        margin: 15px auto;
+        text-align: center;
+        margin: 20px auto;
         /* Adjust margin */
+        max-width: 95%;
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         /* Reduce title size */
     }
 
     .video-container {
-        height: 15vh;
+        height: auto;
         /* Reduce height for smaller screens */
         margin-bottom: 0;
     }
@@ -555,7 +562,7 @@ html {
     }
 
     .categories li {
-        font-size: 1rem;
+        font-size: 0.9rem;
         /* Smaller list items */
     }
 
@@ -581,7 +588,7 @@ html {
 
     /* Why Us Section */
     .why-us {
-        padding: 30px 10px;
+        padding: 20px 10px;
         /* Reduce padding */
         margin: 15px auto;
         /* Adjust margin */
