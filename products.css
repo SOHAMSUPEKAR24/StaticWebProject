@@ -189,3 +189,74 @@ footer {
 .floating-icons a img:hover {
     transform: scale(1.1);
 }
+
+/* General Reset remains unchanged */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 90%; /* Slightly reduce font size for better readability */
+    }
+
+    /* Navigation Bar */
+    .navbar {
+        padding: 5px 0px; /* Reduce padding */
+        text-align: center; /* Center the navigation */
+    }
+
+    .navbar ul {
+        /* flex-direction: column; Stack navigation links vertically */
+        gap: 10px; /* Reduce spacing */
+    }
+
+    .navbar ul li a {
+        padding: 10px 15px; /* Adjust padding */
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    /* Products Section */
+    .products-section {
+        padding: 30px 15px; /* Reduce padding */
+    }
+
+    .products-section h1 {
+        font-size: 2rem; /* Reduce font size */
+    }
+
+    /* Product Container */
+    .products-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust card width */
+        gap: 15px; /* Reduce gap between cards */
+        padding: 15px; /* Adjust padding */
+    }
+
+    /* Product Card */
+    .product-card {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .product-card img {
+        max-width: 150px; /* Limit image size */
+        margin-bottom: 10px; /* Reduce spacing */
+    }
+
+    .product-card h2 {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px; /* Reduce padding */
+        font-size: 0.9rem; /* Reduce font size */
+    }
+
+    /* Floating Icons */
+    .floating-icons {
+        bottom: 10px; /* Adjust position */
+        right: 10px;
+    }
+
+    .floating-icons a img {
+        width: 30px; /* Reduce icon size */
+        height: 30px;
+    }
+}
